@@ -1,0 +1,111 @@
+
+version: 2
+jobs:
+  build:
+    working_directory: ~/food_rec
+    docker:
+      - image: circleci/python:3.6.1
+    steps:
+      - checkout
+      - run:
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r requirements.txt
+      - save_cache:
+          key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
+          paths:
+            - "venv"
+      - run:
+          command: |
+            . venv/bin/activate
+            python setup.py build_ext --inplace
+      - run:
+          command: |
+            . venv/bin/activate
+            python init_params.py
+
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 0
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 1
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 2
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 3
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 4
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 5
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 6
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 7
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 8
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 9
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 10
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 11
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 12
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 13
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 14
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 15
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 16
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 17
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 18
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 19
+      - run:
+          command: |
+            . venv/bin/activate
+            python predict.py
