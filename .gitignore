@@ -1,0 +1,7 @@
+venv/
+train_nn.c
+train_nn.cpython-35m-darwin.so
+build/
+gen_travis.py
+gen_circle.py
+params.npy
