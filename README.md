@@ -10,10 +10,10 @@
 
 ## Accuracy Results:
 
-2 Layer Neural Network
-4800 - 4
-0.008 learning rate
-2000 iterations
+2 Layer Neural Network <br/>
+4800 - 4 <br/>
+0.008 learning rate <br/>
+2000 iterations <br/>
 ```
 Accuracy with training set, 82.890625%
 Accuracy with dev set, 82.0%
@@ -23,10 +23,10 @@ Accuracy in recognising orange: 91.4444444444
 Accuracy in recognising pear: 67.0
 ```
 
-3 Layer Neural Network
-4800 - 2400 - 4
-0.008 learning rate
-2000 iterations
+3 Layer Neural Network <br/>
+4800 - 2400 - 4 <br/>
+0.008 learning rate <br/>
+2000 iterations <br/>
 ```
 Accuracy with training set, 75.046875%
 Accuracy with dev set, 78.5%
