@@ -19,12 +19,7 @@ jobs:
       - run:
           command: |
             . venv/bin/activate
-            python setup.py build_ext --inplace
-      - run:
-          command: |
-            . venv/bin/activate
             python init_params.py
-
       - run:
           command: |
             . venv/bin/activate
