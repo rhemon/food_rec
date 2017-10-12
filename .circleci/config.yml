@@ -20,6 +20,7 @@ jobs:
           command: |
             . venv/bin/activate
             python init_params.py
+
       - run:
           command: |
             . venv/bin/activate
@@ -100,6 +101,46 @@ jobs:
           command: |
             . venv/bin/activate
             python ftrain_nn.py 19
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 20
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 21
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 22
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 23
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 24
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 25
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 26
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 27
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 28
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 29
       - run:
           command: |
             . venv/bin/activate
