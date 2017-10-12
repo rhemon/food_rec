@@ -11,6 +11,19 @@
 ## Accuracy Results:
 
 2 Layer Neural Network <br/>
+12 - 4 <br/>
+0.02 learing rate <br/>
+3000 iterations<br/>
+```
+Accuracy with training set, 85.109375%
+Accuracy with dev set, 84.75%
+Accuracy in recognising mango: 78.5555555556
+Accuracy in recognising apple: 93.6666666667
+Accuracy in recognising orange: 94.3333333333
+Accuracy in recognising pear: 64.4444444444
+```
+
+2 Layer Neural Network <br/>
 4800 - 4 <br/>
 0.008 learning rate <br/>
 2000 iterations <br/>
