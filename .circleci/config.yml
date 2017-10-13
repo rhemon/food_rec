@@ -144,4 +144,284 @@ jobs:
       - run:
           command: |
             . venv/bin/activate
+            python ftrain_nn.py 30
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 31
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 32
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 33
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 34
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 35
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 36
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 37
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 38
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 39
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 40
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 41
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 42
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 43
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 44
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 45
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 46
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 47
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 48
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 49
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 50
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 51
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 52
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 53
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 54
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 55
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 56
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 57
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 58
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 59
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 60
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 61
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 62
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 63
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 64
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 65
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 66
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 67
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 68
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 69
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 70
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 71
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 72
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 73
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 74
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 75
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 76
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 77
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 78
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 79
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 80
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 81
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 82
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 83
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 84
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 85
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 86
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 87
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 88
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 89
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 90
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 91
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 92
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 93
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 94
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 95
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 96
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 97
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 98
+      - run:
+          command: |
+            . venv/bin/activate
+            python ftrain_nn.py 99
+      - run:
+          command: |
+            . venv/bin/activate
             python predict.py
