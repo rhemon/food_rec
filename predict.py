@@ -21,19 +21,30 @@ def sigmoid(z):
 def predict(X, params):
     L = int(len(list(params.keys()))/2)
     cache = {"A0": X}
-    for i in range(L):
+    for i in range(L-1):
         cache["Z"+str(i+1)] = np.dot(params["W"+str(i+1)], cache["A"+str(i)]) + params["b"+str(i+1)]
         cache["A"+str(i+1)] = sigmoid(cache["Z"+str(i+1)])
+    
+    cache["Z"+str(L)] = np.dot(params["W"+str(L)], cache["A"+str(L-1)]) + params["b"+str(L)]
+    cache["T"] = np.exp(cache["Z"+str(L)])
+    cache["A"+str(L)] = (cache["T"]/np.sum(cache["T"], axis=0, keepdims=True))
 
     return np.where(cache["A"+str(L)]==np.max(cache["A"+str(L)], axis=0),1,0)
 
+def compute_accuracy(Y, yHat):
+    incorrect_predictions = ((Y.shape[0]*Y.shape[1])-np.sum(yHat == Y))/2
+    error = incorrect_predictions/Y.shape[1]
+    accuracy = (1-error)* 100
+
+    return accuracy
+
 yHat = predict(X, params)
-print("Accuracy with training set,",str(((np.sum(yHat == Y))/(Y.shape[0]*X.shape[1]))*100) + "%")
+print("Accuracy with training set,",str(compute_accuracy(Y, yHat)) + "%")
 
 yTest = predict(dev_set, params)
-print("Accuracy with dev set,",str(((np.sum(yTest == dev_set_y))/(dev_set_y.shape[0]*dev_set.shape[1])*100)) + "%")
+print("Accuracy with dev set,",str(compute_accuracy(dev_set_y, yTest)) + "%")
 
-# # check out 500 mangos how many it can recognise
+# check out 500 mangos how many it can recognise
 # mangoExamples = np.zeros((4800, 450))
 # mangoExamples[:, 0:400] = X[:,0:400]
 # mangoExamples[:, 400:450] = dev_set[:, 0:50]
