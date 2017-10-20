@@ -6,5 +6,5 @@ X = np.load("data/X.npy")
 Y = np.load("data/Y.npy")
 
 params = np.load("params.npy").item()
-params, costs, iters = train.model(X, Y, params, [X.shape[0], 24, 12, 4], 0.01000, 2500, True, int(sys.argv[1]))
+params, costs, iters = train.model(X, Y, params, [X.shape[0], 24, 12, 4], 0.05000, 2500, True, int(sys.argv[1]))
 np.save("params.npy", params)
