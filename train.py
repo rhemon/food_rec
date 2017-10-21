@@ -12,6 +12,7 @@ def sigmoid(z):
     :returns:  Matrix/Real number (based on input), where the values have been aplied through
                sigmoid function. Range: 0 < g(z) < 1.
     """
+    
     return 1/(1+np.exp(-z))
 
 def init_params(layers):
@@ -30,8 +31,9 @@ def forward_prop(X, params, nl):
         cache["Z"+str(j+1)] = np.array(np.dot(params["W"+str(j+1)], cache["A"+str(j)]) + params["b"+str(j+1)])
         cache["A"+str(j+1)] = sigmoid(cache["Z"+str(j+1)])
     cache["Z"+str(nl-1)] = np.dot(params["W"+str(nl-1)], cache["A"+str(nl-2)]) + params["b"+str(nl-1)]
-    cache["T"] = np.array(np.exp(cache["Z"+str(nl-1)]))
+    cache["T"] = np.exp(cache["Z"+str(nl-1)])
     cache["A"+str(nl-1)] = (cache["T"]/np.sum(cache["T"], axis=0, keepdims=True))
+
     return cache
 
 def compute_cost(cache, Y, m, nl):
@@ -57,9 +59,9 @@ def gradient_descent(params, grads, learning_rate, nl):
 
     return params
 
-def model(oX, oY, params, layers, learning_rate, iteration, print_cost, iter_count):
+def model(X, Y, params, layers, learning_rate, iteration, print_cost, iter_count):
     # Useful variables
-    m = oX.shape[1]
+    m = X.shape[1]
 #     n_x = X.shape[0]
 #     n_h = X.shape[0]
 #     n_y = 4
@@ -68,15 +70,16 @@ def model(oX, oY, params, layers, learning_rate, iteration, print_cost, iter_cou
     nl = len(layers)
     for i in range(iteration):
 
-        # Shuffle Training set
-        TrainingSet = np.append(oX, oY, axis=0)
-        np.random.shuffle(np.transpose(TrainingSet))
-        X = TrainingSet[:4800, :]
-        Y = TrainingSet[4800:, :]
+        # # Shuffle Training set
+        # TrainingSet = np.append(oX, oY, axis=0)
+        # np.random.shuffle(np.transpose(TrainingSet))
+        # X = TrainingSet[:4800, :]
+        # Y = TrainingSet[4800:, :]
 
         # Forward Propagation
         cache = forward_prop(X, params, nl)
 
+        # Compute cost
         cost = compute_cost(cache, Y, m, nl)
 
         # Backward Propagation
